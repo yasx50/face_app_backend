@@ -22,10 +22,10 @@ from utils.database import (
 # ── Load ArcFace model once at startup ───────────────────────────────
 face_app = FaceAnalysis(
     name='buffalo_l',
-    root='./models',
-    allowed_modules=['detection', 'recognition']  # skip unnecessary modules
+    root='/opt/render/project/src/models',
+    allowed_modules=['detection', 'recognition']
 )
-face_app.prepare(ctx_id=0, det_size=(320, 320))  # 320 faster than 640 for speed
+face_app.prepare(ctx_id=-1, det_size=(320, 320))  # -1 = CPU # 320 faster than 640 for speed
 
 # Init DB tables
 init_db()
