@@ -1,0 +1,57 @@
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build files
+build/
+dist/
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# coverage
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# model cache
+*.onnx
+models/
+
+# temporary files
+tmp/
+temp/
+
+# SQLite
+*.sqlite3
+
+# Render
+.render/
+
+# Flutter leftovers (if any)
+.dart_tool/
+.gradle/
